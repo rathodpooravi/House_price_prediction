@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Prediction</title>
+</head>
+
+<body style="background-color: rgb(173, 216, 230);"> 
+<!-- <body background-image="static/dhoni.jpg" background-repeat="no-repeat” background-size="cover”> -->
+    <!-- <center> -->
+    <center>
+    <h1> House Price Prediction </h1>
+    </center>
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSURANCE -->
+    <br>
+    <br>
+    <img src='static\House.png'>
+    
+    <br><br>
+    <form method="get" action ="/predict_price">
+        
+        <label>AREA:</label>
+        <input type="text" name ="area">
+        <br>
+        <br>  
+        <label>BEDROOMS:</label>
+        <input type="text" name ="bedrooms">
+        <br>
+        <br>  
+        <label>BATHROOMS:</label>
+        <input type="text" name ="bathrooms">
+        <br>
+        <br> 
+        <label>STORIES:</label>
+        <input type="text" name ="stories">
+        <br>
+        <br>
+         						
+        <label>MAINROAD:</label>
+        <select name="mainroad">
+            <option value="yes">Yes</option>
+            <option value="no">NO</option></select>
+        
+        <br>  
+        <br>   
+        <label>GUESTROOMS:</label>
+        <select name="guestrooms">
+            <option value="yes">Yes</option>
+            <option value="no">NO</option></select>
+        
+        <br>  
+        <br> 
+        <label>BASEMENT:</label>
+        <select name="basement">
+            <option value="yes">Yes</option>
+            <option value="no">NO</option></select>
+        
+        <br>  
+        <br>  
+        <label>HOT_WATER_HEATING:</label>
+        <select name="hotwaterheating">
+            <option value="yes">Yes</option>
+            <option value="no">NO</option></select>
+        
+        <br>  
+        <br>  
+        <label>AIRCONDITIONING:</label>
+        <select name="airconditioning">
+            <option value="yes">Yes</option>
+            <option value="no">NO</option></select>
+        
+        <br>  
+        <br> 
+        
+        
+        
+        <label>PARKING:</label>
+        <input type="text" name ="parking">
+        <br>
+        <br>
+        <label>PREFAREA:</label>
+        <select name="prefarea">
+            <option value="yes">Yes</option>
+            <option value="no">NO</option></select>
+        
+        <br>  
+        <br>
+        <label>FURNISHING_STATUS</label>
+        <select name="furnishingstatus">
+            <option value="unfurnished">Unfurnished</option>
+            <option value="semi-furnished">Semi-furnished</option>
+            <option value="furnished">Furnished</option></select>
+        
+        <br>  
+        <br>
+        <input type="submit" value ="SUBMIT">
+     
+
+    </form>
+   
+    <br>
+    <br>
+    {{charges}}
+    <!-- </center>  -->
+</body>
+</html>
+
