@@ -1,5 +1,5 @@
-MODEL_FILE_PATH = r'My_API\House_Linear.pkl'
-JSON_FILE_PATH = r'My_API\project_data.json'
+MODEL_FILE_PATH = r'House_Linear.pkl'
+JSON_FILE_PATH = r'project_data.json'
 
 
 

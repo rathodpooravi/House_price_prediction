@@ -1,7 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 import config
-import My_API
-from My_API.utills import HousePrice
+from utills import HousePrice
 
 app = Flask(__name__)
 
@@ -60,4 +59,4 @@ def get_price_rate():
 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port = config.PORT_NUMBER, debug=True)
+    app.run(host = '0.0.0.0', port = config.PORT_NUMBER, debug=False)
